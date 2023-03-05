@@ -51,5 +51,5 @@ write(){
     //writing is done
 
     //exit section
-    signal(resource);                   //relaese the resource
+    signal(resource);                   //release the resource
 }
