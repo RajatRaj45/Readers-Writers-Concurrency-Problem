@@ -22,8 +22,9 @@ chance: it is a counting semaphore. It is used to maintain a queue of processes 
 Now, whenever any process (reader/writer) comes for execution, it waits in the queue maintained by the counting semaphore 'chance'.
 These processes get chance to get executed in the order of their arrival i.e. in FIFO order.
 One process is picked from the queue and it gets exclusive access of the shared resource(file) for execution.
-But if there are consequtive readers in the queue, these are allowed to get the shared resource at the same time to read.
+But if there are consecutive readers in the queue, these are allowed to get the shared resource at the same time to read.
 
-Thus consequtive readers can read at the same time and mutual exclusion is maintained between reader-writer and writer-writer processes.
+Thus consecutive readers can read at the same time and mutual exclusion is maintained between reader-writer and writer-writer processes.
 
 In this way, all the processes/threads whether it be a reader process or writer process get a fair chance to get executed and no process is prone to starvation.
+
